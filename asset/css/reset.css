@@ -1,0 +1,48 @@
+/* 초기화 + 세팅 + 변수 */
+
+:root{
+	--font-base: "TT Interphases Pro";
+    --font-mono: "TT Interphases Pro Mono";
+}
+
+/* 초가화 */
+
+*{margin:0;padding:0;font:inherit;color:inherit;border: 0;box-sizing: border-box;}
+*, :after, :before {
+    box-sizing:border-box;
+    /*패딩 보더*/
+}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+fieldset, input{
+    border: 0;
+}
+ul{list-style: none;}
+
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+body{
+    font-family: var(--font-base);
+}
+
+/* font */
+@font-face{
+	font-family:'TT Interphases Pro';
+	font-weight:700;
+	src: url(../fonts/TT_Interphases_Pro_DemiBold.woff2) format('woff2');
+}
+@font-face{
+	font-family:'TT Interphases Pro';
+	font-weight:500;
+	src: url(../fonts/TT_Interphases_Pro_Medium.woff2) format('woff2');
+}
+@font-face{
+	font-family:'"TT Interphases Pro Mono';
+	font-weight:500;
+	src: url(../fonts/TT_Interphases_Pro_Mono_Regular.woff2) format('woff2');
+}

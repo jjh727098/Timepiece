@@ -1,0 +1,30 @@
+/*
+
+공통
+
+*/
+.blind{
+    position: absolute;
+    clip: rect(0,0,0,0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+.inner{
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.dimmed{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: #191919;
+    height: 100%;
+    pointer-events: none;
+    width: 100%;
+    z-index: 3;
+    opacity: 1;
+}
