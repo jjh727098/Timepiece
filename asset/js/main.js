@@ -13,7 +13,7 @@ gsap.ticker.lagSmoothing(0)
 const splitLines2 = new SplitType('#content .text_effect', {types: 'lines'});
 
 gsap.from('header',{autoAlpha:0,yPercent:-50,duration:2,delay:.5})
-gsap.from('.sc_visual .group_visual_thumb',{autoAlpha:0,scale:1.7,duration:2,delay:.5})
+gsap.from('.sc_visual .group_visual_thumb',{autoAlpha:0,scale:1.2,duration:2,delay:.5})
 gsap.from('.visual_bottom',{autoAlpha:0,duration:2,delay:.5})
 gsap.from('.sc_visual .visual_title .line',{autoAlpha:0,yPercent:-30,stagger:0.3,duration:.7,delay:.3})
 gsap.from('.sc_visual .visual_btn',{autoAlpha:0,yPercent:-30,stagger:0.5,duration:.7,delay:.3})
@@ -23,14 +23,14 @@ const introTl = gsap.timeline({
   scrollTrigger:{
     trigger: ".sc_visual",
     start: '0% 0%',
-    endTrigger:".sc_manifesto",
-    end: '100% 100%',
+    endTrigger:".sc_calibre",
+    end: '50% 50%',
     //markers: true,
     scrub:0,
   }
 })
 introTl
-.to('.sc_visual .group_visual_thumb',{rotate:30})
+.to('.sc_visual .group_visual_thumb',{rotate:5,scale:2.5})
 
 
 // 딤드 공통
@@ -115,7 +115,7 @@ $('.specs_btn').click(function(){
 
 sequenceMotion('#canvas01',1100,1956,311,'image_sequence','.sc_calibre .image_sequence_container','0% 100%','100% 100%')
 sequenceMotion('#canvas02',1606,852,154,'image_sequence02','.sc_backplate','0% 100%','100% 100%')
-sequenceMotion('#canvas03',1300,731,89,'image_sequence03','.sc_material','0% 100%','100% 100%')
+sequenceMotion('#canvas03',1300,731,89,'image_sequence03','.sc_material .sticky_container','0% 100%','100% 100%')
 sequenceMotion('#canvas04',1100,1956,165,'image_sequence04','.sc_engraved','0% 100%','100% 100%')
 
 /**
@@ -397,7 +397,7 @@ sequence2 = gsap.timeline({
     //markers: true,
   },
 })
-sequence2.to('#canvas03',{y:'8vh',scale:"1.4"})
+sequence2.to('#canvas03',{y:'8vh',scale:"1.5"})
 
 gsap.set('.sc_material .head_line_area.top .line',{autoAlpha:0})
 gsap.set('.sc_material .hotspot_info_box .line',{autoAlpha:0})
@@ -411,7 +411,7 @@ mtspotShow1 = gsap.to('.sc_material .hotspot_area',{ paused:true, autoAlpha:1,sc
 
 materialTl10 = gsap.timeline({
   scrollTrigger: {
-    trigger: '.sc_material',
+    trigger: '.sc_material .sticky_container',
     scrub: 0,
     start: "0 0%",
     end: "100% 100%",

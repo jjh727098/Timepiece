@@ -23,7 +23,22 @@ ul{list-style: none;}
 
 
 ::-webkit-scrollbar {
-	display: none;
+    width: 0; 
+    height: 0; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+@media (max-width: 1500px) {
+    ::-webkit-scrollbar {
+		width: 10px; 
+        height: 10px; 
+    }
 }
 
 body{

@@ -643,9 +643,6 @@
     width: 100%;
     transition: background-color .3s;
 }
-.sc_material .image_sequence_container{
-    height: 1000vh;
-}
 .sc_material .image_sequence{
     margin-top: -100vh;
 }
