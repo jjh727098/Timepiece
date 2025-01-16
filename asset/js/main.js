@@ -397,7 +397,7 @@ sequence2 = gsap.timeline({
     //markers: true,
   },
 })
-sequence2.to('#canvas03',{scale:"1.6"})
+sequence2.to('#canvas03',{scale:"1.5"})
 
 gsap.set('.sc_material .head_line_area.top .line',{autoAlpha:0})
 gsap.set('.sc_material .hotspot_info_box .line',{autoAlpha:0})
