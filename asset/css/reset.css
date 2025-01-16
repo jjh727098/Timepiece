@@ -34,12 +34,6 @@ ul{list-style: none;}
     background: #f1f1f1; 
 }
 
-@media (max-width: 1500px) {
-    ::-webkit-scrollbar {
-		width: 10px; 
-        height: 10px; 
-    }
-}
 
 body{
     font-family: var(--font-base);

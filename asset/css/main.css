@@ -693,7 +693,7 @@
 }
 .sc_material .hotspot_area:nth-of-type(1){
     left: 28%;
-    top: 62%;
+    top: 58%;
 }
 .sc_material .hotspot_area:nth-of-type(2){
     left: 58%;
@@ -843,6 +843,10 @@
 .sc_material .gallery_item .gallery_thumb img{
     width: 100%;
     height: auto;
+}
+
+.sc_material .sticky .head_line_area.top{
+    top: 12vh;
 }
 
 .sc_engraved{
@@ -1874,4 +1878,34 @@
 }
 .sc_order .step_item.active .step_info_name{
     opacity: .5;
+}
+.notice_area{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 10000;
+
+    display: none;
+}
+.notice_area .notice_desc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 42px;    
+    color: #fff;
+} 
+
+ @media (max-width: 1300px) {
+    ::-webkit-scrollbar {
+		width: 10px; 
+        height: 10px; 
+    }
+    .notice_area{
+        display: block;
+    }
 }

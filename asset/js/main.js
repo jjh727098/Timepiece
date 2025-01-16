@@ -386,7 +386,7 @@ backplateTl4 = gsap.timeline({
 })
 
 // 이미지 시퀀스 3
-gsap.set('#canvas03',{scale:'1.5'})
+gsap.set('#canvas03',{scale:'2'})
 
 sequence2 = gsap.timeline({
   scrollTrigger: {
@@ -397,7 +397,7 @@ sequence2 = gsap.timeline({
     //markers: true,
   },
 })
-sequence2.to('#canvas03',{y:'8vh',scale:"1.5"})
+sequence2.to('#canvas03',{scale:"1.6"})
 
 gsap.set('.sc_material .head_line_area.top .line',{autoAlpha:0})
 gsap.set('.sc_material .hotspot_info_box .line',{autoAlpha:0})
