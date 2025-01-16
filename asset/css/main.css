@@ -1911,8 +1911,6 @@
         overflow: hidden;
    }
    .notice_area .notice_desc{
-        font-size: 1.4vw;    
-        left: 8px;
-        transform: none;
+        font-size: 12px;    
    }
 }
