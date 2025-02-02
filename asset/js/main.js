@@ -418,7 +418,6 @@ materialTl10 = gsap.timeline({
     //markers: true,
     onUpdate:function(self){
       idx = Math.floor(self.progress*89);
-      // console.log(Math.floor(self.progress*89));
 
       if(idx>=50){
         mttextShow1.play();
@@ -482,40 +481,36 @@ const counter4 = document.getElementById('counter4');
 numberMotion1 = gsap.to({ value: 0 }, {
   paused:true,
   value: 10.74,
-  duration: 2, // 애니메이션 지속 시간 (초)
-  ease: "power1.out", // 이징 효과
+  duration: 2, 
+  ease: "power1.out", 
   onUpdate: function () {
-    // 현재 값을 소수점 2자리로 고정하여 업데이트
     counter1.textContent = this.targets()[0].value.toFixed(2);
   }
 });
 numberMotion2 = gsap.to({ value: 0 }, {
   paused:true,
   value: 11.026,
-  duration: 2, // 애니메이션 지속 시간 (초)
-  ease: "power1.out", // 이징 효과
+  duration: 2, 
+  ease: "power1.out", 
   onUpdate: function () {
-    // 현재 값을 소수점 2자리로 고정하여 업데이트
     counter2.textContent = this.targets()[0].value.toFixed(2);
   }
 });
 numberMotion3 = gsap.to({ value: 0 }, {
   paused:true,
   value: 8.95,
-  duration: 2, // 애니메이션 지속 시간 (초)
-  ease: "power1.out", // 이징 효과
+  duration: 2, 
+  ease: "power1.out", 
   onUpdate: function () {
-    // 현재 값을 소수점 2자리로 고정하여 업데이트
     counter3.textContent = this.targets()[0].value.toFixed(2);
   }
 });
 numberMotion4 = gsap.to({ value: 0 }, {
   paused:true,
   value: 32.516,
-  duration: 2, // 애니메이션 지속 시간 (초)
-  ease: "power1.out", // 이징 효과
+  duration: 2, 
+  ease: "power1.out", 
   onUpdate: function () {
-    // 현재 값을 소수점 2자리로 고정하여 업데이트
     counter4.textContent = this.targets()[0].value.toFixed(3);
   }
 });
@@ -530,7 +525,6 @@ engravedTl = gsap.timeline({
     //markers: true,
     onUpdate:function(self){
       idx = Math.floor(self.progress*165);
-      // console.log(Math.floor(self.progress*165));
 
 
       if(idx>=61){
@@ -638,33 +632,29 @@ Draggable.create(".reassurance_wrapper", {
   bounds:  {
     minX: -document.querySelector(".reassurance_wrapper").offsetWidth 
           + document.querySelector(".reassurance_container").offsetWidth 
-          - margin * 2, // 끝에 margin-left 적용
-    maxX: 0, // 시작점은 0
+          - margin * 2, 
+    maxX: 0, 
   },
   onDrag: function () {
-    // 드래그 가능한 전체 범위
     const totalDistance = this.maxX - this.minX;
 
-    // 현재 위치 (this.x는 현재 드래그된 위치)
     const currentDistance = this.x - this.minX;
 
-    // 진행 비율 계산 (1 → 0)
     const progress = 1 - currentDistance / totalDistance;
 
-    // CSS 변수 업데이트
     gsap.set('.reassurance_container', { '--pro': progress.toFixed(2) });
 
     gsap.to('.instruction', { 
-      opacity: 0, // 드래그 중 투명도 0.5로 변경
-      duration: 0.3, // 0.3초 동안 부드럽게 전환
-      ease: 'power1.out' // 부드러운 이징 효과 적용
+      opacity: 0, 
+      duration: 0.3, 
+      ease: 'power1.out' 
     });
   },
   onDragEnd: function () {
     gsap.to('.instruction', { 
-      opacity: 1, // 드래그 종료 시 투명도 0으로 변경
-      duration: 0.5, // 0.5초 동안 부드럽게 사라짐
-      ease: 'power1.inOut' // 부드러운 이징 효과 적용
+      opacity: 1, 
+      duration: 0.5, 
+      ease: 'power1.inOut' 
     });
   },
 });
@@ -760,22 +750,20 @@ const progressBars = document.querySelectorAll('.step_progress');
 
 const timeline = gsap.timeline({ repeat: -1, delay: 0 });
 
-// 각 슬라이드에 대한 애니메이션을 순차적으로 추가
 stepItems.forEach((item, index) => {
   timeline
     .to(progressBars[index], {
-      width: '100%', // 현재 슬라이드의 프로그레스 바 채우기
-      duration: 3, // 3초 동안 채우기
+      width: '100%', 
+      duration: 3, 
       ease: 'power2.out',
       onStart: () => {
-        // 현재 슬라이드 활성화
         stepItems.forEach((el) => el.classList.remove('active'));
         item.classList.add('active');
       },
     })
     .to(progressBars[index], {
-      width: '0%', // 현재 슬라이드의 프로그레스 바 초기화
-      duration: 0, // 즉시 초기화
+      width: '0%', 
+      duration: 0, 
       ease: 'none',
     });
 });
