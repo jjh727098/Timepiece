@@ -47,7 +47,9 @@
     height: 100%;
     animation: ring linear infinite 1s;
 }
-
+.sc_material .image_sequence_container .image_sequence .canvas{
+    width: 100%;
+}
 
 .sc_visual{
     background-color: #000;

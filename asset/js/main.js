@@ -321,7 +321,7 @@ sequence1 = gsap.timeline({
     //markers: true,
   },
 })
-sequence1.to('#canvas01',{y:'50vh',scale:'1'})
+sequence1.to('#canvas01',{y:'80vh',scale:'1'})
 sequence1.to('#canvas01',{y:'30vh'})
 sequence1.to('#canvas01',{y:'-37vh',scale:'.7'})
 sequence1.to('#canvas01',{y:'10vh'})
@@ -386,8 +386,6 @@ backplateTl4 = gsap.timeline({
 })
 
 // 이미지 시퀀스 3
-gsap.set('#canvas03',{scale:'2'})
-
 sequence2 = gsap.timeline({
   scrollTrigger: {
     trigger: '.sc_material',
@@ -397,7 +395,6 @@ sequence2 = gsap.timeline({
     //markers: true,
   },
 })
-sequence2.to('#canvas03',{scale:"1.5"})
 
 gsap.set('.sc_material .head_line_area.top .line',{autoAlpha:0})
 gsap.set('.sc_material .hotspot_info_box .line',{autoAlpha:0})
