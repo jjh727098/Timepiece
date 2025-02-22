@@ -37,6 +37,7 @@ ul{list-style: none;}
 
 body{
     font-family: var(--font-base);
+    overflow-x: hidden;
 }
 
 /* font */
