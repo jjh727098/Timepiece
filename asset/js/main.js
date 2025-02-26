@@ -160,10 +160,6 @@ function sequenceMotion(frame,w,h,total,src,triggerEl,triggerStart,triggerEnd){
         start: triggerStart,
         end: triggerEnd,
         //markers: true,
-        onUpdate:function(self){
-          // console.log(Math.floor(self.progress*frameCount));
-    
-        }
       },
     })
     seqMotion.to(card,{
