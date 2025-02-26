@@ -9,11 +9,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2.0833333333vw;
+    gap: 2.08vw;
 
     position: fixed;
     left: 0;
-    top: 2.0833333333vw;
+    top: 2.08vw;
 
     color: #fdfdfd;
     
@@ -69,7 +69,7 @@
     display: inline-block;
     content: "";
 
-    margin: 0 5.9722222222vw 0 5vw;
+    margin: 0 5.9vw 0 5vw;
     background-color: #a0a0a0;
     height: 32px;
     margin: 0 4vw;
@@ -108,10 +108,9 @@
     line-height: 1.15;
     text-transform: uppercase;
 } 
-#header .navi .navi_center .navi_link_text{} 
 #header .navi .navi_center .navi_link_text .navi_num{
     display: inline-block;
-    margin-right: 1.5972222222vw;
+    margin-right: 1.59vw;
 
     color: #a0a0a0;
     font-family: "TT Interphases Pro Mono";
@@ -241,9 +240,6 @@
 #footer .primary_area .primary_title{
     font-family: "TT Interphases Pro Mono";
     color: #fdfdfd;
-}
-#footer .primary_list
-#footer .primary_list .primary_item{
 }
 #footer .primary_list .primary_item .primary_link{
     display: flex;

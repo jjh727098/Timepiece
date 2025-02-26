@@ -10,7 +10,6 @@
 *{margin:0;padding:0;font:inherit;color:inherit;border: 0;box-sizing: border-box;}
 *, :after, :before {
     box-sizing:border-box;
-    /*패딩 보더*/
 }
 img, picture, video, canvas, svg {display: block;max-width:100%;}
 button {background:none;border:0;cursor:pointer;}
